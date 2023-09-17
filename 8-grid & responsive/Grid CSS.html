@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .about-p{
+            padding: 70px 0px;
+        }
+        .about-us .about-flex{
+            display: flex;
+        }
+        .about-us .about-flex .about-left{
+            flex: 1;
+            padding: 20px;
+            gap: 20px;
+        }
+        .about-us .about-flex .about-left h6{
+            font-size: 18px;
+            color: gray;
+            text-transform: uppercase;
+            padding-bottom: 10px;
+        }
+        .about-us .about-flex .about-left h1{
+            color: #3f3a64;
+            font-size: 35px;
+        }
+        .about-us .about-flex .about-left p{
+            padding: 20px 0px;
+            color: gray;
+            font-size: 17px;
+        }
+        .about-us .about-flex .about-left ul{
+            line-height: 40px;
+        }
+        .about-us .about-flex .about-left span{
+            padding-right: 10px;
+            color: #009f4d;
+        }
+        .about-us .about-flex .about-left li{
+            color: #3f3a64;
+            font-size: 20px;
+        }
+        .about-us .about-flex .about-right{
+            flex: 1;
+        }
+        .about-us .about-flex .about-right .gird-box{
+            display: grid;
+            grid-template-columns:repeat(2,1fr);
+            gap: 20px;
+        }
+        .about-us .about-flex .about-right .gird-box img{
+            height:auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about-us .about-flex .about-right .gird-box .img1{
+            grid-row: 1 / span 2;
+        }
+        
+
+        /* ================= media sreen ================= */
+
+        @media(max-width:576px) {
+            .about-us .about-flex{
+                display: flex;
+                flex-direction: column;
+            }
+            .about-us .about-flex .about-left{
+                padding: 5px;
+                
+            }
+        }
+
+        @media(min-width:576px) {
+            .about-us .about-flex{
+                display: flex;
+                flex-direction: column;
+            }
+            .about-us .about-flex .about-left{
+                padding: 5px;
+            }
+        }
+        @media (min-width:992px) {
+            .about-us .about-flex{
+                display: flex;
+                flex-direction: row;
+            }
+            .about-us .about-flex .about-left{
+                padding: 20px;
+            }
+        }
+
+
+
+
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-p">
+                <div class="about-flex">
+                    <div class="about-left">
+                        <h6>About Us</h6>
+                        <h1>We make the best strategies for you, Enhancing your success</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea. </p>
+                        <ul>
+                            <li><span class="fa-solid fa-circle-check"></span>
+                                UI/UX Design and Development</li>
+                            <li><span class="fa-solid fa-circle-check"></span>
+                                Branding Design and Identity</li>
+                            <li><span class="fa-solid fa-circle-check"></span >
+                                Mobile App Design and Development</li>
+                        </ul>
+                    </div>
+                    <div class="about-right">
+                        <div class="gird-box">
+                            <div class="img1">
+                                <img src="img/img1.jpg" alt="">
+                            </div>
+                            <div class="img2">
+                                <img src="img/img2.jpg" alt="">
+                            </div>
+                            <div class="img3">
+                                <img src="img/img3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
